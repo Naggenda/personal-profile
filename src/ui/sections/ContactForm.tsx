@@ -103,7 +103,7 @@ export default function ContactForm() {
           </p>
         ) : (
           <p className="muted small">
-            This submits via Formspree and delivers to your configured email.
+            I will respond to your message as soon as possible.
           </p>
         )}
       </form>

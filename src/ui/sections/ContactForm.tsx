@@ -33,6 +33,9 @@ export default function ContactForm() {
       }
 
       setStatus('sent')
+      setName('')
+      setEmail('')
+      setMessage('')
     } catch (err) {
       const msg = err instanceof Error ? err.message : 'Unknown error'
       setError(msg)
@@ -41,6 +44,7 @@ export default function ContactForm() {
   }
 
   return (
+
     <div className="contactCard">
       <form className="contactForm" onSubmit={submit}>
         <div className="formRow">
